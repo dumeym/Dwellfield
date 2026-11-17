@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1130" role="img" aria-labelledby="title desc">
+  <title id="title">Indicative Model B one-bedroom floor plan</title>
+  <desc id="desc">The 2024 Model B prototype has a 12.0 by 4.5 metre external footprint, or 54 square metres. An open-plan living, dining and kitchen area is approximately 6.0 by 4.5 metres; bathroom approximately 2.0 by 3.5 metres; bedroom approximately 4.0 by 4.5 metres. An optional 4.0 by 2.0 metre deck sits outside the left entrance.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#28312b" flood-opacity=".10"/></filter>
+    <pattern id="deck" width="26" height="26" patternUnits="userSpaceOnUse"><rect width="26" height="26" fill="#dfc39e"/><path d="M0 0V26" stroke="#cba97e" stroke-width="2"/></pattern>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif}.ink{fill:#202720}.muted{fill:#6b746d}.line{stroke:#29332b;stroke-width:6;fill:none;stroke-linecap:square}.thin{stroke:#8e988f;stroke-width:2;fill:none}.small{font-size:21px;letter-spacing:2.7px;font-weight:700}.zone{font-size:28px;font-weight:600}.sub{font-size:20px;fill:#59665b}.dim{font-size:20px;fill:#58645a;letter-spacing:1.2px}
+    </style>
+  </defs>
+  <rect width="1600" height="1130" fill="#f3f2ed"/>
+  <text x="84" y="72" class="sans small ink">DWELLFIELD / MODEL B</text>
+  <text x="82" y="142" class="sans ink" font-size="58" font-weight="600" letter-spacing="-2">Indicative floor plan</text>
+  <text x="85" y="185" class="sans muted" font-size="23">1 bedroom  /  1 bathroom  /  open-plan living, dining and kitchen</text>
+  <rect x="70" y="218" width="1460" height="832" rx="18" fill="#fffdfa" filter="url(#shadow)"/>
+  <text x="800" y="275" text-anchor="middle" class="sans dim">12.0 m external length</text>
+  <path d="M170 288H1430 M170 280V298 M1430 280V298" class="thin"/>
+  <text x="485" y="315" text-anchor="middle" class="sans muted" font-size="18">OPEN PLAN · APPROX. 6.0 × 4.5 m</text>
+  <text x="905" y="315" text-anchor="middle" class="sans muted" font-size="17">BATHROOM</text>
+  <text x="1217" y="315" text-anchor="middle" class="sans muted" font-size="18">BEDROOM</text>
+
+  <!-- The outer drawing follows the overall 12.0 m by 4.5 m proportions of the supplied 2024 Model B plan. -->
+  <rect x="170" y="328" width="1260" height="472" fill="#fbfaf7" stroke="#29332b" stroke-width="11"/>
+  <rect x="177" y="335" width="413" height="458" fill="#fbfaf7"/>
+  <rect x="590" y="335" width="210" height="458" fill="#f2f1eb"/>
+  <rect x="800" y="335" width="210" height="330" fill="#eff3f1"/>
+  <rect x="800" y="665" width="210" height="128" fill="#fbfaf7"/>
+  <rect x="1010" y="335" width="413" height="458" fill="#f9f7f3"/>
+
+  <!-- Open-plan furniture, kept diagrammatic rather than construction-specific. -->
+  <rect x="226" y="405" width="270" height="78" rx="17" fill="#b4bcae"/>
+  <rect x="234" y="413" width="124" height="60" rx="10" fill="#d6ddd0"/>
+  <rect x="364" y="413" width="124" height="60" rx="10" fill="#d6ddd0"/>
+  <rect x="268" y="533" width="230" height="160" rx="9" fill="#e2d6c4"/>
+  <ellipse cx="383" cy="613" rx="73" ry="40" fill="#f7f3ea" stroke="#b9ae9e" stroke-width="3"/>
+  <rect x="616" y="357" width="156" height="70" rx="5" fill="#c8d1c5"/>
+  <circle cx="651" cy="391" r="17" fill="#f8faf5" stroke="#9ba89c" stroke-width="3"/>
+  <circle cx="722" cy="391" r="13" fill="#5d685e"/>
+  <circle cx="751" cy="391" r="13" fill="#5d685e"/>
+  <rect x="616" y="503" width="142" height="78" rx="37" fill="#ddcbb8"/>
+  <circle cx="594" cy="527" r="19" fill="#b2baa9"/><circle cx="780" cy="527" r="19" fill="#b2baa9"/>
+  <circle cx="594" cy="565" r="19" fill="#b2baa9"/><circle cx="780" cy="565" r="19" fill="#b2baa9"/>
+
+  <!-- Bathroom. -->
+  <path d="M800 665V335H1010V665 M800 665H835 M930 665H1010" class="line"/>
+  <rect x="823" y="354" width="80" height="108" rx="5" fill="#f9fbf9" stroke="#a8c2bb" stroke-width="3"/>
+  <path d="M823 354L903 462" stroke="#a8c2bb" stroke-width="2"/>
+  <ellipse cx="955" cy="409" rx="31" ry="44" fill="#fff" stroke="#a8c2bb" stroke-width="3"/>
+  <rect x="826" y="544" width="144" height="65" rx="4" fill="#d8e4e1"/>
+  <ellipse cx="899" cy="575" rx="31" ry="17" fill="#fff" stroke="#a8c2bb" stroke-width="2"/>
+  <path d="M835 665A95 95 0 0 1 930 570" class="thin" stroke-dasharray="7 7"/>
+
+  <!-- Bedroom and its clear hall opening. -->
+  <path d="M1010 335V680 M1010 735V800" class="line"/>
+  <rect x="1120" y="426" width="222" height="240" rx="9" fill="#d8c5b5"/>
+  <rect x="1131" y="439" width="200" height="214" rx="6" fill="#f8f3e9"/>
+  <rect x="1143" y="451" width="88" height="55" rx="8" fill="#e5d6c7"/>
+  <rect x="1237" y="451" width="82" height="55" rx="8" fill="#e5d6c7"/>
+  <rect x="1355" y="448" width="43" height="188" rx="4" fill="#c8b7a5"/>
+
+  <!-- Door to living and bedroom window on the lower/front long elevation, per owner correction. -->
+  <rect x="383" y="790" width="182" height="20" fill="#fbfaf7"/>
+  <rect x="389" y="790" width="170" height="16" fill="#dbe9e6" stroke="#29332b" stroke-width="3"/>
+  <path d="M474 790V806 M383 790V810 M565 790V810" stroke="#29332b" stroke-width="5"/>
+  <path d="M1140 800H1340" stroke="#95b2a9" stroke-width="14"/>
+  <path d="M1140 792V807 M1340 792V807" stroke="#344235" stroke-width="7"/>
+  <path d="M383 806A180 180 0 0 0 563 986" class="thin" stroke-dasharray="8 8" opacity=".4"/>
+
+  <!-- Optional deck: 4 m along the wall by 2 m outward; shown with a dashed outline. -->
+  <rect x="300" y="809" width="420" height="210" fill="url(#deck)" stroke="#9b7954" stroke-width="4" stroke-dasharray="12 9"/>
+  <text x="474" y="849" text-anchor="middle" class="sans" font-size="17" font-weight="700" letter-spacing="1.5" fill="#59665b">GLAZED ENTRY</text>
+  <text x="510" y="906" text-anchor="middle" class="sans zone ink">Optional deck</text>
+  <text x="510" y="938" text-anchor="middle" class="sans sub">4.0 × 2.0 m  ·  pale timber</text>
+
+  <text x="375" y="728" text-anchor="middle" class="sans zone ink">Living</text>
+  <text x="375" y="757" text-anchor="middle" class="sans sub">Open-plan zone</text>
+  <text x="696" y="650" text-anchor="middle" class="sans zone ink">Dining</text>
+  <text x="696" y="697" text-anchor="middle" class="sans zone ink">Kitchen</text>
+  <text x="904" y="516" text-anchor="middle" class="sans" font-size="23" font-weight="600" fill="#202720">Bathroom</text>
+  <text x="904" y="539" text-anchor="middle" class="sans" font-size="18" fill="#59665b">≈ 2.0 × 3.5 m</text>
+  <text x="1217" y="721" text-anchor="middle" class="sans zone ink">Bedroom</text>
+  <text x="1217" y="750" text-anchor="middle" class="sans sub">≈ 4.0 × 4.5 m</text>
+  <text x="1454" y="580" transform="rotate(90 1454 580)" text-anchor="middle" class="sans dim">4.5 m external width</text>
+  <text x="84" y="1098" class="sans muted" font-size="20">2024 Model B prototype: 12.0 × 4.5 m external footprint (54 m²). All room dimensions indicative; confirm against final sales plan.</text>
+</svg>

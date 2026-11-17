@@ -1,0 +1,34 @@
+---
+const dimensions = {
+  "hero-deck": [1536, 1024],
+  "blue-hour": [1536, 1024],
+  living: [1536, 1024],
+  "living-to-kitchen": [1536, 1024],
+  "kitchen-dining": [1536, 1024],
+  "kitchen-detail": [1199, 1312],
+  "bathroom-detail": [1024, 1536],
+  bedroom: [1536, 1024],
+} as const;
+type ImageName = keyof typeof dimensions;
+interface Props {
+  name: ImageName;
+  alt: string;
+  class?: string;
+  sizes?: string;
+  priority?: boolean;
+}
+const { name, alt, class: className, sizes = "100vw", priority = false } = Astro.props;
+const [width, height] = dimensions[name];
+---
+<img
+  src={`/images/${name}.webp`}
+  srcset={`/images/${name}-760.webp 760w, /images/${name}.webp ${width}w`}
+  sizes={sizes}
+  width={width}
+  height={height}
+  alt={alt}
+  class={className}
+  loading={priority ? "eager" : "lazy"}
+  fetchpriority={priority ? "high" : undefined}
+  decoding="async"
+/>

@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+interface Props { title?: string; description?: string; }
+const { title = "Dwellfield | Secondary dwellings for Queensland", description = "A warm, self-contained secondary dwelling designed for Queensland backyards." } = Astro.props;
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f4f1ea" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/images/hero-deck.webp" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <script is:inline>
+      (function () {
+        const root = document.documentElement;
+        root.classList.add("js");
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            if (root.hasAttribute("data-motion-ready")) return;
+            document.querySelectorAll("[data-reveal]:not(.is-in)").forEach(function (el) { el.classList.add("is-in"); });
+          }, 2500);
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-ink focus:px-4 focus:py-2 focus:text-bone">Skip to content</a>
+    <script>import "~/lib/motion";</script>
+    <slot />
+  </body>
+</html>

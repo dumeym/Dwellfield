@@ -1,0 +1,45 @@
+---
+const links = [
+  { label: "The home", href: "/#home" },
+  { label: "Design", href: "/#design" },
+  { label: "The layout", href: "/#layout" },
+  { label: "Price & inclusions", href: "/#pricing" },
+  { label: "FAQs", href: "/#faq" },
+];
+---
+<header class="sticky top-0 z-40 border-b border-line-2 bg-bone/95 backdrop-blur-md" data-nav>
+  <div class="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-6 px-6 lg:px-10">
+    <a href="/#top" class="inline-flex items-center gap-3 text-ink" aria-label="Dwellfield, back to top">
+      <span class="font-display text-[32px] font-semibold leading-none tracking-[-.035em] sm:text-[36px]">Dwellfield</span>
+      <span class="hidden border-l border-ink/30 pl-3 font-mono text-[9px] uppercase leading-[1.4] tracking-[.15em] xl:block">Secondary<br />dwellings</span>
+    </a>
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">{links.map((link) => <a href={link.href} class="font-mono text-[10px] uppercase tracking-[.13em] text-ink-3 transition-colors hover:text-ink">{link.label}</a>)}</nav>
+    <a href="/#enquire" class="hidden border border-ink px-4 py-2 font-mono text-[10px] uppercase tracking-[.13em] transition-colors hover:bg-ink hover:text-bone md:inline-block">Order &amp; know more ↗</a>
+    <button type="button" id="menu-toggle" class="flex h-10 w-10 items-center justify-center border border-ink/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span class="text-xl leading-none" aria-hidden="true">☰</span></button>
+  </div>
+  <nav id="mobile-menu" class="hidden border-t border-line-2 bg-bone px-6 py-6 lg:hidden" aria-label="Mobile"><div class="flex flex-col gap-4">{links.map((link) => <a href={link.href} class="font-display text-3xl">{link.label}</a>)}<a href="/#enquire" class="mt-3 border-t border-line pt-4 font-mono text-[11px] uppercase tracking-[.14em]">Order &amp; know more ↗</a></div></nav>
+</header>
+<script>
+  const setupMenu = () => {
+    const button = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    if (!(button instanceof HTMLButtonElement) || !menu) return;
+    const setOpen = (open: boolean) => {
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      menu.classList.toggle("hidden", !open);
+    };
+    button.addEventListener("click", () => setOpen(button.getAttribute("aria-expanded") !== "true"));
+    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        button.focus();
+      }
+    });
+    document.addEventListener("click", (event) => {
+      if (button.getAttribute("aria-expanded") === "true" && event.target instanceof Node && !button.contains(event.target) && !menu.contains(event.target)) setOpen(false);
+    });
+  };
+  setupMenu();
+</script>

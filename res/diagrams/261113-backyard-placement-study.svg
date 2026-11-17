@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative backyard placement of a secondary dwelling</title>
+  <desc id="desc">An existing home and a timber-look secondary dwelling sit on the same suburban lot, with an optional deck at the secondary dwelling and a conceptual access route between them.</desc>
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="11" stdDeviation="16" flood-color="#344436" flood-opacity=".17"/></filter>
+    <pattern id="plank" width="23" height="23" patternUnits="userSpaceOnUse"><rect width="23" height="23" fill="#e2c49a"/><path d="M0 0V23" stroke="#caa777" stroke-width="2"/></pattern>
+    <style>.t{font-family:Arial,Helvetica,sans-serif;fill:#263429}.tag{font-size:19px;letter-spacing:2.5px;font-weight:700}.label{font-size:27px;font-weight:700}.sub{font-size:20px;fill:#667267}</style>
+  </defs>
+  <rect width="1600" height="940" fill="#f3f2ed"/>
+  <text x="77" y="72" class="t tag">BACKYARD PLACEMENT  /  CONCEPT</text>
+  <text x="75" y="142" class="t" font-size="58" font-weight="600" letter-spacing="-2">More living, on the same property</text>
+  <text x="78" y="184" class="t sub">A secondary dwelling can create private space while staying connected to the main home.</text>
+
+  <rect x="73" y="223" width="1454" height="635" rx="18" fill="#fffdfa" filter="url(#s)"/>
+  <rect x="136" y="267" width="1050" height="542" rx="6" fill="#dae4d3" stroke="#809784" stroke-width="4" stroke-dasharray="16 12"/>
+  <path d="M136 765H1186" stroke="#67776a" stroke-width="5"/>
+  <rect x="136" y="765" width="1050" height="44" fill="#b9b9b3"/>
+  <text x="661" y="795" text-anchor="middle" class="t" font-size="18" font-weight="700" letter-spacing="4" fill="#fff">STREET</text>
+
+  <!-- Existing home at the front of the single lot. -->
+  <rect x="247" y="576" width="375" height="151" rx="7" fill="#fffdf8" stroke="#8a948a" stroke-width="5" filter="url(#s)"/>
+  <path d="M237 576L298 522H568L633 576Z" fill="#7c8980"/>
+  <rect x="285" y="618" width="64" height="48" fill="#b8d1cd" stroke="#607b78" stroke-width="4"/>
+  <rect x="380" y="617" width="88" height="110" fill="#d6cbc0" stroke="#8a948a" stroke-width="4"/>
+  <rect x="505" y="618" width="64" height="48" fill="#b8d1cd" stroke="#607b78" stroke-width="4"/>
+  <rect x="241" y="429" width="387" height="58" rx="13" fill="#fffdfa"/>
+  <text x="271" y="466" class="t label">Existing home</text>
+
+  <!-- Secondary dwelling at the back, with one door, one front window, and a small deck. -->
+  <rect x="672" y="348" width="420" height="189" rx="5" fill="#c59664" stroke="#3c433d" stroke-width="6" filter="url(#s)"/>
+  <path d="M656 348L714 299H1054L1109 348Z" fill="#333a38"/>
+  <path d="M686 364V526 M704 364V526 M722 364V526 M740 364V526 M758 364V526 M776 364V526 M794 364V526 M812 364V526 M830 364V526 M848 364V526 M866 364V526 M884 364V526 M902 364V526 M920 364V526 M938 364V526 M956 364V526 M974 364V526 M992 364V526 M1010 364V526 M1028 364V526 M1046 364V526 M1064 364V526" stroke="#b88857" stroke-width="2"/>
+  <rect x="745" y="406" width="84" height="131" fill="#9abcb6" stroke="#313b39" stroke-width="7"/>
+  <path d="M787 406V537" stroke="#313b39" stroke-width="6"/>
+  <rect x="973" y="418" width="88" height="62" fill="#9abcb6" stroke="#313b39" stroke-width="7"/>
+  <rect x="703" y="539" width="178" height="83" fill="url(#plank)" stroke="#a7825c" stroke-width="3"/>
+  <text x="703" y="335" class="t tag" style="fill:#fff">WARM TIMBER-LOOK ALUMINIUM</text>
+  <rect x="681" y="636" width="410" height="62" rx="13" fill="#fffdfa"/>
+  <text x="706" y="675" class="t label">Secondary dwelling</text>
+  <text x="705" y="733" class="t sub">Optional timber deck shown</text>
+
+  <!-- Greenery and conceptual route. -->
+  <path d="M632 653C740 650 701 638 703 622" fill="none" stroke="#d9c4a3" stroke-width="29" stroke-linecap="round" stroke-dasharray="1 34"/>
+  <circle cx="268" cy="337" r="55" fill="#9db696"/><circle cx="288" cy="340" r="48" fill="#87a77f"/><circle cx="235" cy="347" r="41" fill="#aac3a1"/>
+  <circle cx="514" cy="326" r="33" fill="#9eb696"/><circle cx="1122" cy="678" r="37" fill="#9eb696"/>
+  <circle cx="1164" cy="327" r="23" fill="#c0cfb4"/>
+
+  <!-- Explanation card. -->
+  <rect x="1221" y="287" width="266" height="452" rx="12" fill="#f0ede5"/>
+  <text x="1250" y="338" class="t tag">WHAT IT SHOWS</text>
+  <path d="M1250 361H1456" stroke="#c5c6b9" stroke-width="2"/>
+  <text x="1250" y="410" class="t" font-size="22" font-weight="600">One shared lot</text>
+  <text x="1250" y="444" class="t sub">Existing home in front.</text>
+  <text x="1250" y="474" class="t sub">New home to the rear.</text>
+  <path d="M1250 508H1456" stroke="#c5c6b9" stroke-width="2"/>
+  <text x="1250" y="557" class="t" font-size="22" font-weight="600">A site review first</text>
+  <text x="1250" y="591" class="t sub">Access, setbacks,</text>
+  <text x="1250" y="621" class="t sub">services and approvals</text>
+  <text x="1250" y="651" class="t sub">vary by property.</text>
+  <text x="78" y="903" class="t sub">Illustrative placement only. The home is a secondary dwelling on the same property; final location and approvals depend on the site.</text>
+</svg>

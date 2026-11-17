@@ -1,0 +1,25 @@
+---
+---
+
+<div class="bg-line-2 fixed top-0 right-0 left-0 z-50 h-px" aria-hidden="true">
+  <div class="bg-brass h-full w-0 origin-left" data-scroll-progress style="width: 0%"></div>
+</div>
+
+<script>
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { scrollEffect } from "~/lib/motion";
+
+  scrollEffect((ctx) => {
+    if (ctx.reduced) return;
+    const bar = document.querySelector<HTMLElement>("[data-scroll-progress]");
+    if (!bar) return;
+    const trigger = ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: (self) => {
+        bar.style.width = `${(self.progress * 100).toFixed(2)}%`;
+      },
+    });
+    return () => trigger.kill();
+  });
+</script>

@@ -1,0 +1,60 @@
+---
+import { STATS } from "~/data/stats";
+---
+
+<section id="stats" class="bg-bone py-32 lg:py-44">
+  <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+    <div class="grid grid-cols-2 gap-12 lg:grid-cols-4 lg:gap-8">
+      {STATS.map((s) => (
+        <div class="border-line-2 border-t pt-8" data-reveal>
+          <p class="font-display text-ink leading-none" style="font-size: clamp(3rem, 6vw, 5.5rem)">
+            <span data-count={s.value}>{s.value}</span>
+          </p>
+          <p class="text-ink-3 mt-6 font-mono text-xs tracking-[0.18em] uppercase">{s.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { scrollEffect } from "~/lib/motion";
+
+  scrollEffect((ctx) => {
+    const counters = gsap.utils.toArray<HTMLElement>("[data-count]");
+    if (counters.length === 0) return;
+    if (ctx.reduced) {
+      counters.forEach((el) => {
+        const target = Number(el.getAttribute("data-count") ?? "0");
+        el.textContent = target.toLocaleString();
+      });
+      return;
+    }
+    const triggers: ScrollTrigger[] = [];
+    counters.forEach((el) => {
+      const target = Number(el.getAttribute("data-count") ?? "0");
+      el.textContent = "0";
+      triggers.push(
+        ScrollTrigger.create({
+          trigger: el,
+          start: "top 82%",
+          once: true,
+          onEnter: () => {
+            const proxy = { n: 0 };
+            gsap.to(proxy, {
+              n: target,
+              duration: 1.6,
+              ease: "power3.out",
+              onUpdate: () => {
+                el.textContent = Math.round(proxy.n).toLocaleString();
+              },
+            });
+          },
+        }),
+      );
+    });
+    return () => triggers.forEach((t) => t.kill());
+  });
+</script>
